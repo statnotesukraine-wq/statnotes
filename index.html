@@ -6,7 +6,7 @@
     <title>Розподіл середнього балу НМТ, 2025 рік</title>
     <style>
         :root {
-            --primary-color: #007bff; 
+            --primary-color: #007bff;
             --text-color-dark: #333;
             --text-color-light: #666;
             --bg-body: #f5f7fa;
@@ -16,7 +16,7 @@
             --padding-base: 20px;
         }
         body {
-            font-family: 'Roboto', Arial, sans-serif; 
+            font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
             padding: var(--padding-base);
             background-color: var(--bg-body);
@@ -27,7 +27,7 @@
             margin: 0 auto;
             background: var(--bg-container);
             padding: var(--padding-base);
-            border-radius: 12px; 
+            border-radius: 12px;
             box-shadow: var(--shadow-light);
         }
         h1 {
@@ -50,7 +50,6 @@
             border-radius: 8px;
             overflow: hidden;
             position: relative;
-            padding-bottom: 60%; 
             height: 0;
         }
         .flourish-container .flourish-embed {
@@ -66,7 +65,15 @@
             margin-top: var(--padding-base);
             font-size: 0.9em;
         }
-        @media (max-width: 768px) {
+        .flourish-container {
+            padding-bottom: 60%; 
+        }
+        @media (min-width: 768px) and (max-width: 1200px) {
+            .flourish-container {
+                padding-bottom: 65%; /* Ближче до 4:3 */
+            }
+        }
+        @media (max-width: 767px) {
             body {
                 padding: 10px;
             }
@@ -78,7 +85,10 @@
                 font-size: 1.5em;
             }
             .flourish-container {
-                padding-bottom: 75%; 
+                padding-bottom: 85%; /* Висока карта, близька до квадрата */
+            }
+            .note {
+                margin-top: 10px;
             }
         }
     </style>
@@ -89,7 +99,7 @@
         <p class="description">Інтерактивна карта розподілу середніх балів Національного мультипредметного тестування по регіонах України.</p>
         <div class="flourish-container">
             <div class="flourish-embed flourish-map" data-src="visualisation/25936017">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>        
+                <script src="https://public.flourish.studio/resources/embed.js"></script>
                 <noscript>
                     <img src="https://public.flourish.studio/visualisation/25936017/thumbnail" style="width: 100%; height: auto; display: block;" alt="Карта візуалізації середнього балу НМТ по регіонах" />
                 </noscript>
