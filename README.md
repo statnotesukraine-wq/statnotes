@@ -1,1 +1,101 @@
-# statnotes
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розподіл середнього балу НМТ, 2025 рік</title>
+    <style>
+        :root {
+            --primary-color: #007bff; 
+            --text-color-dark: #333;
+            --text-color-light: #666;
+            --bg-body: #f5f7fa;
+            --bg-container: #ffffff;
+            --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --border-color: #e0e0e0;
+            --padding-base: 20px;
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            margin: 0;
+            padding: var(--padding-base);
+            background-color: var(--bg-body);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--bg-container);
+            padding: var(--padding-base);
+            border-radius: 12px; 
+            box-shadow: var(--shadow-light);
+        }
+        h1 {
+            color: var(--text-color-dark);
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            font-size: 2em;
+        }
+        .description {
+            text-align: center;
+            color: var(--text-color-light);
+            font-style: italic;
+            margin-bottom: var(--padding-base);
+            font-size: 1.1em;
+        }
+        .flourish-container {
+            margin: var(--padding-base) 0;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 60%; 
+            height: 0;
+        }
+        .flourish-container .flourish-embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .note {
+            text-align: center;
+            color: var(--text-color-light);
+            margin-top: var(--padding-base);
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                border-radius: 0;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .flourish-container {
+                padding-bottom: 75%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Розподіл середнього балу НМТ, 2025 рік</h1>
+        <p class="description">Інтерактивна карта розподілу середніх балів Національного мультипредметного тестування по регіонах України.</p>
+        <div class="flourish-container">
+            <div class="flourish-embed flourish-map" data-src="visualisation/25936017">
+                <script src="https://public.flourish.studio/resources/embed.js"></script>        
+                <noscript>
+                    <img src="https://public.flourish.studio/visualisation/25936017/thumbnail" style="width: 100%; height: auto; display: block;" alt="Карта візуалізації середнього балу НМТ по регіонах" />
+                </noscript>
+            </div>
+        </div>
+        <p class="note">⚠️ Використовуйте мишку або торкання для взаємодії з картою.</p>
+    </div>
+</body>
+</html>
